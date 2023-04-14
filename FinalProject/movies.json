@@ -1,0 +1,67 @@
+[{
+  "_id": {
+    "$oid": "643862e132f38d9181c42cd3"
+  },
+  "name": "The Shawshank Redemption",
+  "description": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
+  "year": 1994,
+  "genres": [
+    "Drama"
+  ],
+  "rating": 9.3,
+  "added_by": "Jane Doe"
+},{
+  "_id": {
+    "$oid": "643862e832f38d9181c42cd4"
+  },
+  "name": "The Godfather",
+  "description": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
+  "year": 1972,
+  "genres": [
+    "Crime",
+    "Drama"
+  ],
+  "rating": 9.2,
+  "added_by": "John Smith"
+},{
+  "_id": {
+    "$oid": "643862f932f38d9181c42cd5"
+  },
+  "name": "The Dark Knight",
+  "description": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
+  "year": 2008,
+  "genres": [
+    "Action",
+    "Crime",
+    "Drama"
+  ],
+  "rating": 9,
+  "added_by": "Sarah Johnson"
+},{
+  "_id": {
+    "$oid": "6438630732f38d9181c42cd6"
+  },
+  "name": "Forrest Gump",
+  "description": "The presidencies of Kennedy and Johnson, the events of Vietnam, Watergate and other historical events unfold through the perspective of an Alabama man with an IQ of 75, whose only desire is to be reunited with his childhood sweetheart.",
+  "year": 1994,
+  "genres": [
+    "Comedy",
+    "Drama",
+    "Romance"
+  ],
+  "rating": 8.8,
+  "added_by": "Mark Davis"
+},{
+  "_id": {
+    "$oid": "6438631a32f38d9181c42cd7"
+  },
+  "name": "The Matrix",
+  "description": "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.",
+  "year": 1999,
+  "genres": [
+    "Action",
+    "Sci-Fi"
+  ],
+  "rating": 8.7,
+  "added_by": "Emily Lee"
+}]
