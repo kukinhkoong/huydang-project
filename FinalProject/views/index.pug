@@ -1,0 +1,33 @@
+extends layout
+
+block content
+    if user
+        h3.welcome-message Welcome back #{user.name}!
+      
+        form(method="POST" action="/movie/search")
+            div.form-group
+                label(for="name") What you looking for?:
+                input.form-control(type="text" id="name" name="searchName")
+            button.btn.btn-primary(type="submit") Search 
+
+        if noMoviesFound       
+            div.no-movies-found
+                p No movies found
+        if (movies && movies.length>0)
+            div.search-results
+                h2 Search Results
+                each movie in movies        
+                    h3= movie.name
+                    p= movie.description
+                    p Year: #{movie.year}
+                    p Rating: #{movie.rating}
+                    p Genres:
+                    ul       
+                        each genre in movie.genres
+                            li #{genre}
+            
+        
+        
+        
+        
+        

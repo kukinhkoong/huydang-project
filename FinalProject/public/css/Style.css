@@ -1,0 +1,277 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  /* Header */
+  
+  header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #555;
+    overflow: hidden;
+    padding: 10px;
+    color: white;
+  }
+  
+  nav a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  #appname {
+    font-size: 30px;
+    margin: 0;
+  }
+  .nav-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  nav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  
+  nav a.right {
+    float: right;
+  }
+  nav h1 {
+    margin: 0;
+    font-size: 28px;
+    color: white;
+  }
+  nav a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  form {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 20px;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+  
+  .form-group {
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0px;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  
+  
+  .movie {
+    margin: 20px auto;
+    max-width: 500px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .movie h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .movie p {
+    margin-bottom: 10px;
+  }
+  
+  .movie ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+  
+  .movie li {
+    display: inline-block;
+    margin-right: 5px;
+    background-color: #ddd;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+ 
+  
+  .search-results {
+    margin: 20px auto;
+    max-width: 500px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .search-results h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .search-results p {
+    margin-bottom: 10px;
+  }
+  .search-results ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+  
+  .search-results li {
+    display: inline-block;
+    margin-right: 5px;
+    background-color: #ddd;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  .welcome-message {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .no-movies-found {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  .search-results {
+    margin-top: 20px;
+  }
+  
+  .search-results h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .search-results h3 {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+  
+  .search-results p {
+    margin-bottom: 5px;
+  }
+  
+  .search-results ul {
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .search-results li {
+    margin-bottom: 5px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  label {
+    margin-top: 10px;
+  }
+  
+  input[type="text"],
+  input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 20px;
+    vertical-align: middle;
+  }
+  
+  .btn-primary {
+    margin-top: 20px;
+  }
+  .genres-group {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .genres-group label {
+    margin-right: 10px;
+    margin-bottom: 5px;
+  }

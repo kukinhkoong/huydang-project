@@ -1,0 +1,30 @@
+extends layout
+
+block content
+  h1 Add a Recipe
+  form(method="post", action="/recipes/add")
+    label Name
+    input(type="text", name="name", required)
+    br
+    label Description
+    textarea(name="description", required)
+    br
+    label Difficulty
+    select(name="difficulty", required)
+      option(value="Easy") Easy
+      option(value="Medium") Medium
+      option(value="Hard") Hard
+    br
+    label Ingredients (separated by commas)
+    textarea(name="ingredients", required)
+    br
+    label Steps (separated by line breaks)
+    textarea(name="steps", required)
+    br
+    button(type="submit") Submit
+
+  if errors
+    ul.errors
+      each error in errors
+        li= error
+

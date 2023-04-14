@@ -12,8 +12,8 @@ const cors = require('cors')
 // MongoDB Config
 const config = require("./config/database");
 
-// Import book routes
-var book_routes = require("./routes/books");
+// Import movie routes
+var movie_routes = require("./routes/movies");
 // Import user routes
 var user_routes = require("./routes/users");
 
@@ -57,8 +57,8 @@ app.use(passport.session());
 // Enable CORS on all routes
 app.use(cors())
 
-// Import Book Mongoose schemas
-let Book = require("./models/book");
+// Import movie Mongoose schemas
+let movie = require("./models/movie");
 
 // Load view engine
 app.set("/", path.join(__dirname, "views"));
@@ -72,18 +72,18 @@ app.get("*", function(req, res, next){
 })
 
 app.use("/users", user_routes);
-app.use("/book", book_routes);
+app.use("/movie", movie_routes);
 
 app.use("/", function (req, res) {
-  // Query MongoDB for books
-  Book.find({}, function (err, books) {
+  // Query MongoDB for movies
+  movie.find({}, function (err, movies) {
     // Catch error
     if (err) {
       console.log("error");
     } else {
-      // Pass books to index
+      // Pass movies to index
       res.render("index", {
-        books: books,
+        movies: movies,
       });
     }
   });

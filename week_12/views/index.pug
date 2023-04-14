@@ -3,20 +3,20 @@ extends layout
 block content
     if user
         h3 Welcome back #{user.name}!
-    h1 Bookstore
-    //- Loop through all books
-    each book in books 
-        //- Display title, author, pages, rating
-        label Title:
-        //- Link to book with id
-        a(href="/book/" + book._id) #{book.title}
-        p Author: #{book.author}
-        p Pages: #{book.pages}
-        p Rating: #{book.rating}
+    h1 moviestore
+    //- Loop through all movies
+    each movie in movies 
+        //- Display name, director, duration, rating
+        label name:
+        //- Link to movie with id
+        a(href="/movie/" + movie._id) #{movie.name}
+        p director: #{movie.director}
+        p duration: #{movie.duration}
+        p Rating: #{movie.rating}
         p Genres:
         ul
         //- Loop through genres and print as list
-        each genre in book.genres
+        each genre in movie.genres
             li #{genre}
 
         br

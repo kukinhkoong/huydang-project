@@ -50,7 +50,7 @@ module.exports = function (passport) {
       if (err) {
         done(null, false, { error: err });
       }
-      done(err, user);
+      done(null, user);
     });
   });
 };

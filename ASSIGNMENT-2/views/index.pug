@@ -1,0 +1,26 @@
+extends layout
+
+block content
+  h1 Recipe App
+  //- Loop through all recipes
+  each recipe in recipes
+    //- Display name, description, difficulty, ingredients, and steps
+    label Name:
+    //- Link to recipe with id
+    a(href="/recipes/" + recipe._id) #{recipe.name}
+    p Description: #{recipe.description}
+    p Difficulty: #{recipe.difficulty}
+    p Ingredients:
+    ul
+      //- Loop through ingredients and print as list
+      each ingredient in recipe.ingredients
+        li #{ingredient}
+
+    p Steps:
+    ol
+      //- Loop through steps and print as list
+      each step in recipe.steps
+        li #{step}
+
+    br
+    br

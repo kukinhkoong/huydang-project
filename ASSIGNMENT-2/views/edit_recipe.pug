@@ -1,0 +1,30 @@
+extends layout
+
+block content
+  h1= recipe.name
+  form(method="POST" action="/recipes/edit/" + recipe._id)
+    #form-group
+      label Name:
+      input.form-control(name="name" type="text" value=recipe.name)
+
+    #form-group
+      label Description:
+      textarea.form-control(name="description" rows="4")= recipe.description
+
+    #form-group
+      label Difficulty:
+      select.form-control(name="difficulty")
+        option(value="Easy" selected=(recipe.difficulty === 'Easy')) Easy
+        option(value="Medium" selected=(recipe.difficulty === 'Medium')) Medium
+        option(value="Hard" selected=(recipe.difficulty === 'Hard')) Hard
+
+    #form-group
+      label Ingredients (separated by commas):
+      textarea.form-control(name="ingredients" rows="4")= recipe.ingredients.join(', ')
+
+    #form-group
+      label Steps (separated by line breaks):
+      textarea.form-control(name="steps" rows="4")= recipe.steps.join('\n')
+
+    br
+    input.btn.btn-primary(type="submit" value="Submit")
